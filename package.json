@@ -1,0 +1,31 @@
+{
+  "name": "akilo_check_in",
+  "version": "1.0.0",
+  "description": "A qrcode check-in app",
+  "homepage": "https://github.com/akilocorp/akilo_ticket_check_in#readme",
+  "bugs": {
+    "url": "https://github.com/akilocorp/akilo_ticket_check_in/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akilocorp/akilo_ticket_check_in.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongo-express": "^0.30.54",
+    "mongoose": "^8.15.2",
+    "multer": "^2.0.1",
+    "qrcode": "^1.5.4",
+    "xlsx": "^0.18.5"
+  }
+}
