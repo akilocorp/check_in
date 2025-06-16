@@ -1,7 +1,7 @@
 const express=require('express');
 const multer=require('multer')
 const app= express();
-
+const cors=require('cors')
 //Middleware
 const middleware=express.json()
 const authHandlers = require('./routes/auth');
@@ -10,7 +10,7 @@ const verifyToken=require('./middlewares/verify_token')
 
 app.use(middleware)
 
-
+app.use(cors());
 app.use((req, res,next)=>{
     console.log(`${new Date().toISOString()} - ${req.method} ${req.url}`);
     next()
